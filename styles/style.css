@@ -1,0 +1,12 @@
+html {
+	background-color : #3E2723;
+}
+#scorelabel,#distlabel{
+	color: #B2FF59;
+}
+div{
+	float : right;
+}
+canvas{
+	border : solid black;
+}
