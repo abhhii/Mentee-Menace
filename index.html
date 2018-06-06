@@ -1,25 +1,21 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Mentee Menace</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta charset="utf-8">
 		<meta name="author" content="Abhishek Singhal">
-		 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<script src= "scripts/script.js"></script>
-		<link href = 'styles/style.css' rel = 'stylesheet' type = 'text/css'>	
+		<link href = 'styles/style.css' rel = 'stylesheet' type = 'text/css'>
+		<title>Mentee Menace</title>
 	</head>
-	<body>
-		<form action='index.html' method='post'>
-		<div>
-			<label id='distlabel' for='distance'>Distance</label>
-			<input type='text' id='distance' name='dist_covered'>
+	<body onload='playmusic();'>
+		<div  id='welcome'>
+			<p>MENTEE MENACE!</p> 
+			<button id ='play' type='button' onclick="document.getElementById('welcome').style.display = 'none';startGame();">Play!</button>
 		</div>
-		<div>
-			<label id='scorelabel' for='score'>Score</label>
-			<input type='text' id='score' name='score'>
+		<div  id='overlay'>
+			<p>GAME OVER!</p> 
+			<button id ='restart' type='button' onclick=' document.location.reload();'>Restart</button>
 		</div>
-	</form>
-	<p></p>
-	<canvas id='gamearea' ></canvas>
 	</body>
 </html>
